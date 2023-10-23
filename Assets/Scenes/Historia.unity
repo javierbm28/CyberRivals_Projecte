@@ -907,8 +907,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: 57}
-  m_SizeDelta: {x: 1223.0535, y: 282.7032}
+  m_AnchoredPosition: {x: -15, y: -71.30977}
+  m_SizeDelta: {x: 1223.0535, y: 588.3788}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741592879
 MonoBehaviour:
@@ -932,9 +932,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "En una batalla campal, dos facciones en guerra, los Luminis y los Umbra,
     compiten por el control de sus tierras. Ash y Nyx, los representantes de sus
-    bandos, se enfrentan por hacer justicia. Cada uno busca la supremac\xEDa en un
-    mundo devastado por la guerra. \xBFQuien prevalecer\xE1 en esta batalla definitiva
-    por el futuro de la humanidad?"
+    bandos, se enfrentan por hacer justicia. \nCada uno busca la supremac\xEDa en
+    un mundo devastado por la guerra.\n\n\xBFQuien prevalecer\xE1 en esta batalla
+    definitiva por el futuro de la humanidad?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -961,14 +961,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
