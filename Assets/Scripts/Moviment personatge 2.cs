@@ -18,7 +18,7 @@ public class Movimentpersonatge2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput2 = Input.GetAxisRaw("Vertical") * _velocidad;
+        float horizontalInput2 = Input.GetAxisRaw("Horizontal2") * _velocidad;
 
         _rigidbody2D.velocity = new Vector2(horizontalInput2, _rigidbody2D.velocity.y);
 
