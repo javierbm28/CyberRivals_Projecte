@@ -6,19 +6,27 @@ public class Movimentpersonatge2 : MonoBehaviour
 {
     private Rigidbody2D _rigidbody2D;
     private float _velocidad;
-
+    private float _velocidadSaltar;
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.freezeRotation = true;
         _velocidad = 5f;
+        _velocidadSaltar = 5f;
     }
 
     // Update is called once per frame
     void Update()
     {
         float horizontalInput2 = Input.GetAxisRaw("Horizontal2") * _velocidad;
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _velocidadSaltar);
+
+        }
 
         _rigidbody2D.velocity = new Vector2(horizontalInput2, _rigidbody2D.velocity.y);
 
