@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Caja_destruida_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcd7edb3a302f345895a1ecbcc459d2
+      internalID: 495106752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 292
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81f2372e76464c4ea94b739961b20e5
+      internalID: 549184162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 292
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed07f4cc91c92e41a4383ba856345dc
+      internalID: -850941786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069c6d88916a2b346b4d777aa7b750f8
+      internalID: 883743629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 146
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d6316fe8ab868408c36eea60761127
+      internalID: 661746746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 146
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0d6bdd8879a0c4a98d8efe13597c2e
+      internalID: -762698717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d7d1acff41e364fac1acfadfc85094
+      internalID: 925632875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_7
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953dbf7eeac704e44b8e226ac8a29ba1
+      internalID: -622782253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_destruida_8
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 0
+        width: 191.66667
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a95410848359c468655f744cfdd086
+      internalID: 257483020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +321,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Caja_destruida_0: 495106752
+      Caja_destruida_1: 549184162
+      Caja_destruida_2: -850941786
+      Caja_destruida_3: 883743629
+      Caja_destruida_4: 661746746
+      Caja_destruida_5: -762698717
+      Caja_destruida_6: 925632875
+      Caja_destruida_7: -622782253
+      Caja_destruida_8: 257483020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
