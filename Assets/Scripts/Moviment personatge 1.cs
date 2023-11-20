@@ -50,5 +50,7 @@ public class Movimentpersonatge1 : MonoBehaviour
         }
         _animacionJugador1.MovimentHorizontal(inpputHorizontal);
 
+        
+
     }
 }
