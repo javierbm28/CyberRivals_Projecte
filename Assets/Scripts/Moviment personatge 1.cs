@@ -42,10 +42,12 @@ public class Movimentpersonatge1 : MonoBehaviour
             if (inpputHorizontal > 0) 
             {
                 _spriteRendererPersonatge1.flipX = false;
+                transform.eulerAngles = new Vector3(0, 0, 0);
             }
             else if (inpputHorizontal < 0)
             {
                 _spriteRendererPersonatge1 .flipX = true;
+                transform.eulerAngles = new Vector3(0, 180, 0);
             }
         }
         _animacionJugador1.MovimentHorizontal(inpputHorizontal);
