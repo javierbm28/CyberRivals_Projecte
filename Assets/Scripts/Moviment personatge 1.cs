@@ -46,7 +46,7 @@ public class Movimentpersonatge1 : MonoBehaviour
             }
             else if (inpputHorizontal < 0)
             {
-                _spriteRendererPersonatge1 .flipX = true;
+                //_spriteRendererPersonatge1 .flipX = true;
                 transform.eulerAngles = new Vector3(0, 180, 0);
             }
         }
