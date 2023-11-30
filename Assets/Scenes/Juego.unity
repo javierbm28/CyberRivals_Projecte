@@ -555,6 +555,10 @@ MonoBehaviour:
   - {fileID: 626386859}
   - {fileID: 108402863}
   - {fileID: 486598442}
+  tiempoCongelado: 2
+  velocidadMovimiento: 5
+  bulletsText: {fileID: 968968614}
+  bulletsText1: {fileID: 1651283006}
 --- !u!212 &297849839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1422,6 +1426,7 @@ GameObject:
   - component: {fileID: 555813594}
   - component: {fileID: 555813593}
   - component: {fileID: 555813592}
+  - component: {fileID: 555813595}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1503,6 +1508,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &555813595
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555813591}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.5, y: 0}
+  - {x: 0.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &604725916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,7 +2277,7 @@ GameObject:
   - component: {fileID: 968968615}
   - component: {fileID: 968968614}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: bulletsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2435,12 +2481,16 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 5.3034687, y: 14.711981}
+  - {x: 5.230329, y: 14.687602}
+  - {x: 5.2116857, y: 13.733446}
+  - {x: 5.2087135, y: 13.581341}
   - {x: 5.2393312, y: 1.3276429}
-  - {x: 5.2095833, y: 1.239489}
+  - {x: 5.229606, y: 1.0930579}
+  - {x: 5.7420564, y: 1.1432402}
+  - {x: 5.860282, y: 1.1170502}
   - {x: 33.411133, y: 1.4290437}
   - {x: 33.50142, y: 1.4290437}
-  - {x: 33.535328, y: 14.617441}
+  - {x: 33.457153, y: 14.656528}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2561,6 +2611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1060096816}
   - component: {fileID: 1060096817}
+  - component: {fileID: 1060096818}
   m_Layer: 0
   m_Name: platform-block-09 (3)
   m_TagString: Untagged
@@ -2635,6 +2686,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1060096818
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060096815}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.5249999, y: 9.812632}
+  - {x: -2.649125, y: 0.16631828}
+  - {x: -2.7139509, y: -1.1642097}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1102303770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3715,7 +3808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: 400}
+  m_AnchoredPosition: {x: 2.5083008, y: 396}
   m_SizeDelta: {x: 403.8559, y: 124.1293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1563233578
@@ -3994,7 +4087,7 @@ GameObject:
   - component: {fileID: 1651283007}
   - component: {fileID: 1651283006}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: bulletsText1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4016,7 +4109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 923, y: 348}
+  m_AnchoredPosition: {x: 899, y: 348}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1651283006
@@ -4779,8 +4872,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.0966163, y: 1.2039528}
-  - {x: 2.1133838, y: 1.212677}
+  - {x: -2.0823834, y: 1.2088898}
+  - {x: -2.1085596, y: -0.94302297}
+  - {x: -2.1154046, y: 1.2294918}
+  - {x: 2.082534, y: 1.2301701}
+  - {x: 2.0992002, y: -0.87257874}
+  - {x: -2.1054447, y: -0.87666124}
+  - {x: 2.1057377, y: -0.8703496}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

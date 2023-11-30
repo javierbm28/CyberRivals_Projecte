@@ -17,7 +17,8 @@ public class DisparoPersonaje1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
-            Instantiate(Proyectil, FirePoint.position, FirePoint.rotation);       
+            Instantiate(Proyectil, FirePoint.position, FirePoint.rotation);   
         }
     }
+    
 }
