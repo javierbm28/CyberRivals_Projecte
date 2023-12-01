@@ -533,9 +533,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Bienvenidos a Cyber Rivals! \n\nEn este juego deber\xE1s acabar con tu
     oponente para conseguir la victoria, mediante el transcurso de la partida apareceran
-    operaciones matem\xE1ticas, si aciertas antes que tu rival te beneficiar\xE1n,
-    pero si la fallas te ralentizar\xE1n con 5 segundos de ralentizaci\xF3n de movimiento.
-    \n\nPreparate y demuestra tus habilidades soldado! "
+    operaciones matem\xE1ticas, si aciertas antes que tu rival te beneficiar\xE1n
+    con 6 balas extra en tu inventario y si el primer jugador que responde la operacion
+    falla se quedar\xE1 como nula.\n\nPreparate y demuestra tus habilidades soldado! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

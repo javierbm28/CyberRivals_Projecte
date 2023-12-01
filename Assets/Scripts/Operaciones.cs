@@ -8,7 +8,7 @@ public class Operaciones : MonoBehaviour
     public Text operationText;
     public Text[] resultTexts; 
     private float tiempoOperacion = 10f;
-    private float tiempoParaResponder = 8f;
+    private float tiempoParaResponder = 9f;
     public float velocidadMovimiento = 5f;
     private int bulletsJ1 = 0;
     private int bulletsJ2 = 0;
@@ -131,6 +131,11 @@ public class Operaciones : MonoBehaviour
                 bulletsText1.text = bulletsJ2.ToString();
             }
            
+            canAnswer = false;
+            StartCoroutine(ResetAnswerAfterDelay());
+        }
+        else
+        {
             canAnswer = false;
             StartCoroutine(ResetAnswerAfterDelay());
         }
