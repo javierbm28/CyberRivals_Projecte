@@ -19,7 +19,7 @@ public class Operaciones : MonoBehaviour
     private Text resultadoCaja2;
     private Text resultadoCaja3;
 
-    private int [] correctPlayer = new int[2];
+    private int correctPlayer = 0;
     private bool canAnswer = true;
 
     void Start()
@@ -116,9 +116,9 @@ public class Operaciones : MonoBehaviour
 
     void HandleAnswer(bool isCorrect, int playerNumber)
     {
-        if (isCorrect && correctPlayer [playerNumber-1] == 0)
+        if (isCorrect && correctPlayer == 0)
         {
-            correctPlayer[playerNumber-1] = playerNumber;
+            correctPlayer = playerNumber;
 
             if (playerNumber == 1 && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.F)))
             {
@@ -134,7 +134,7 @@ public class Operaciones : MonoBehaviour
             canAnswer = false;
             StartCoroutine(ResetAnswerAfterDelay());
         }
-        
+
         //Debug.Log(isCorrect);
     }
 
@@ -145,14 +145,12 @@ public class Operaciones : MonoBehaviour
 
         // Permite la respuesta nuevamente
         canAnswer = true;
-
-        correctPlayer[0] = 0;
-        correctPlayer[1] = 0;
     }
 
     IEnumerator GenerarOperacionMatematica()
     {
         canAnswer = true;
+        correctPlayer = 0;
 
         int operand1 = Random.Range(1, 10);
         int operand2 = Random.Range(1, 10);
@@ -171,6 +169,7 @@ public class Operaciones : MonoBehaviour
                 resultTexts[i].text = (result + Random.Range(-5, 6)).ToString();
             }
         }
+
         yield return null;
     }
 
