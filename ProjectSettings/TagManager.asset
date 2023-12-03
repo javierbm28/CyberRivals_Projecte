@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Player1
+  - Player2
+  - Plataforma
+  - JugadorRival
   layers:
   - Default
   - TransparentFX
@@ -49,4 +53,10 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3328968127
+    locked: 0
+  - name: Player
+    uniqueID: 2944242849
+    locked: 0
+  - name: Proyectil
+    uniqueID: 1882013619
     locked: 0

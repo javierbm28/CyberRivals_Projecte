@@ -1,22 +1,48 @@
+// Script: bullet
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private Rigidbody2D MyRb;
-    public float speed;
+    public float speed = 10f;
+    public float lifeTime = 5f;
+
     void Start()
     {
-        MyRb = GetComponent<Rigidbody2D>();
+        Destroy(gameObject, lifeTime);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        MyRb.velocity = transform.right * speed;
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+    }
 
-        
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        // Verificar colisiones con jugadores y plataformas.
+        if (other.CompareTag("Player1"))
+        {
+            other.GetComponent<VidaJ1>().RestarVida();
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Player2"))
+        {
+            other.GetComponent<VidaJ2>().RestarVida();
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Plataforma"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Ignorar colisiones con jugadores.
+        if (collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Player2"))
+        {
+            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+        }
     }
 }

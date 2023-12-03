@@ -555,7 +555,6 @@ MonoBehaviour:
   - {fileID: 626386859}
   - {fileID: 108402863}
   - {fileID: 486598442}
-  tiempoCongelado: 2
   velocidadMovimiento: 5
   bulletsText: {fileID: 968968614}
   bulletsText1: {fileID: 1651283006}
@@ -1222,8 +1221,8 @@ GameObject:
   - component: {fileID: 480682223}
   - component: {fileID: 480682222}
   m_Layer: 0
-  m_Name: platform-block-back-02 (4)
-  m_TagString: Untagged
+  m_Name: Plataforma3
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1264,7 +1263,7 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -2.523413, y: 0.6503713}
-  - {x: 2.5283022, y: 0.65240943}
+  - {x: 2.612477, y: 0.65240943}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -1806,15 +1805,17 @@ GameObject:
   m_Component:
   - component: {fileID: 734028088}
   - component: {fileID: 734028087}
+  - component: {fileID: 734028096}
   - component: {fileID: 734028089}
   - component: {fileID: 734028090}
   - component: {fileID: 734028091}
   - component: {fileID: 734028092}
   - component: {fileID: 734028093}
   - component: {fileID: 734028094}
+  - component: {fileID: 734028095}
   m_Layer: 0
   m_Name: Jugador1movimiento_0
-  m_TagString: Untagged
+  m_TagString: JugadorRival
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1857,8 +1858,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -965999169
-  m_SortingLayer: 3
+  m_SortingLayerID: -1350724447
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1202668877, guid: 987ed934b31235840b05744b36696c10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2018,6 +2019,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 1775918047}
   Proyectil: {fileID: 1914304764645745263, guid: 3153e843b5b569d4eacaf118aa7d7e8c, type: 3}
+--- !u!114 &734028095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734028086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31667f530391204c947ef8123050ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteVida:
+  - {fileID: -1752430168, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 1749219961, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 1970764525, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 472378789, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: -761359718, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 2142989922, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+--- !u!114 &734028096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734028086}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2d29bb8e5dd5543ac75b9d7c5dffba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teclaDisparo: 32
+  prefabBala: {fileID: 1914304764645745263, guid: 3153e843b5b569d4eacaf118aa7d7e8c, type: 3}
+  velocidadBala: 10
 --- !u!1 &752116776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,8 +3465,8 @@ GameObject:
   - component: {fileID: 1347178725}
   - component: {fileID: 1347178724}
   m_Layer: 0
-  m_Name: platform-block-back-02 (2)
-  m_TagString: Untagged
+  m_Name: Plataforma2
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3556,8 +3591,8 @@ GameObject:
   - component: {fileID: 1446546897}
   - component: {fileID: 1446546896}
   m_Layer: 0
-  m_Name: platform-block-back-02 (1)
-  m_TagString: Untagged
+  m_Name: Plataforma5
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3869,9 +3904,11 @@ GameObject:
   - component: {fileID: 1634664959}
   - component: {fileID: 1634664960}
   - component: {fileID: 1634664961}
+  - component: {fileID: 1634664962}
+  - component: {fileID: 1634664963}
   m_Layer: 0
   m_Name: Jugador2movimiento2_0
-  m_TagString: Untagged
+  m_TagString: JugadorRival
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3914,8 +3951,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -965999169
-  m_SortingLayer: 3
+  m_SortingLayerID: -1350724447
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -64782154, guid: b518daffcaaed16458750ce7c1cef13a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4075,6 +4112,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 795075022}
   Proyectil: {fileID: 1914304764645745263, guid: e3a1fa73aaf19be4fa2904006bcaeef2, type: 3}
+--- !u!114 &1634664962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634664953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4d53e5a08850a47abd50655544a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteVida:
+  - {fileID: -1752430168, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 1749219961, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 1970764525, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 472378789, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: -761359718, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+  - {fileID: 2142989922, guid: 6dd463df87fafa647a6059c09b818192, type: 3}
+--- !u!114 &1634664963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634664953}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2d29bb8e5dd5543ac75b9d7c5dffba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teclaDisparo: 112
+  prefabBala: {fileID: 1914304764645745263, guid: 3153e843b5b569d4eacaf118aa7d7e8c, type: 3}
+  velocidadBala: 10
 --- !u!1 &1651283004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4504,8 +4575,8 @@ GameObject:
   - component: {fileID: 1920704421}
   - component: {fileID: 1920704420}
   m_Layer: 0
-  m_Name: platform-block-back-02 (3)
-  m_TagString: Untagged
+  m_Name: Plataforma4
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5380,8 +5451,8 @@ GameObject:
   - component: {fileID: 2091112400}
   - component: {fileID: 2091112399}
   m_Layer: 0
-  m_Name: platform-block-back-02
-  m_TagString: Untagged
+  m_Name: Plataforma1
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -26,6 +26,9 @@ public class Movimentpersonatge1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
         float inpputHorizontal = Input.GetAxisRaw("Horizontal") * _velocidadCorrer;
         OrientacioSprite(inpputHorizontal);
 
