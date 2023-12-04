@@ -10,8 +10,8 @@ public class Operaciones : MonoBehaviour
     private float tiempoOperacion = 10f;
     private float tiempoParaResponder = 9f;
     public float velocidadMovimiento = 5f;
-    private int bulletsJ1 = 0;
-    private int bulletsJ2 = 0;
+    private int bulletsJ1 = 10;
+    private int bulletsJ2 = 10;
     public TextMeshProUGUI bulletsText;
     public TextMeshProUGUI bulletsText1;
     private int resultatCorrecteCalculat;
