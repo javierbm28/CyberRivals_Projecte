@@ -24,7 +24,7 @@ public class MenuCyberRivals : MonoBehaviour
 
     public void EscenaAjustes()
     {
-        SceneManager.LoadScene("Ajustes");
+        SceneManager.LoadScene("Credits");
     }
 
 }
