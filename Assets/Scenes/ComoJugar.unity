@@ -243,7 +243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: -395}
+  m_AnchoredPosition: {x: 11, y: -426}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301112240
@@ -374,7 +374,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -214, y: 400}
+  m_AnchoredPosition: {x: -214, y: 417}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519192931
@@ -508,8 +508,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 229}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -44, y: 286}
+  m_SizeDelta: {x: 380.8783, y: 62.0407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535280264
 MonoBehaviour:
@@ -535,7 +535,14 @@ MonoBehaviour:
     oponente para conseguir la victoria, mediante el transcurso de la partida apareceran
     operaciones matem\xE1ticas, si aciertas antes que tu rival te beneficiar\xE1n
     con 6 balas extra en tu inventario y si el primer jugador que responde la operacion
-    falla se quedar\xE1 como nula.\n\nPreparate y demuestra tus habilidades soldado! "
+    falla se quedar\xE1 como nula.\n\nControles del jugador 1 (ASH)\n\"a\" y \"s\"
+    para moverse horizontalmente y w para saltar, el disparo con la barra espaciadora
+    y para responder la operaci\xF3n deber\xE1s darle a la tecla \"e\", \"r\" o \"f\",
+    depende cual creas correcta.\n\nControles del jugador 2 (NYX)\nEl movimiento
+    horizontal lo hara con las flechitas izquierda y derecha, el salto con la flechita
+    para arriba, el disparo con \"p\" y para elegir el resultado correcto de la operaci\xF3n
+    las teclas \"i\", \"o\" o \"L\", depende cual creas correcta.\n\nPreparate y
+    demuestra tus habilidades soldado! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -562,8 +569,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -598,7 +605,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -393.30795, y: 0, z: -423.5625, w: -607.25024}
+  m_margin: {x: -393.30795, y: 0.000061035156, z: -423.5625, w: -607.25024}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
