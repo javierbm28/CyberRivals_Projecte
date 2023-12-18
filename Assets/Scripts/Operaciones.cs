@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Threading;
 using TMPro;
 using UnityEngine;
@@ -32,6 +33,8 @@ public class Operaciones : MonoBehaviour
 
     private int correctPlayer = 0;
     private bool canAnswer = true;
+
+    private List<int> resultadosGenerados = new List<int>();
 
     void Start()
     {
@@ -219,6 +222,16 @@ public class Operaciones : MonoBehaviour
         int result;
         char operation = GetRandomOperation(operand1, operand2, out result);
 
+        while (resultadosGenerados.Contains(result))
+        {
+            operand1 = Random.Range(5, 10);
+            operand2 = Random.Range(1, 4);
+            operation = GetRandomOperation(operand1, operand2, out result);
+        }
+
+        resultadosGenerados.Add(result);
+
+
         operationText.text = $"{operand1} {operation} {operand2}";
 
         int correctIndex = Random.Range(0, resultTexts.Length);
@@ -228,8 +241,20 @@ public class Operaciones : MonoBehaviour
         {
             if (i != correctIndex)
             {
-                resultTexts[i].text = (result + Random.Range(-5, 6)).ToString();
+                int randomResult = result;
+                while (resultadosGenerados.Contains(randomResult))
+                {
+                    randomResult = result + Random.Range(-5, 6);
+                }
+
+                resultTexts[i].text = randomResult.ToString();
+                resultadosGenerados.Add(randomResult);
             }
+        }
+
+        if(resultadosGenerados.Count > 10)
+        {
+            resultadosGenerados.Clear();
         }
 
         yield return null;
