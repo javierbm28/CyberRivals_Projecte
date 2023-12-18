@@ -24,7 +24,9 @@ public class Operaciones : MonoBehaviour
 
     public TextMeshProUGUI MasBalasJ1;
     public TextMeshProUGUI MasBalasJ2;
-    public float duracionAparicion = 2f;
+    public TextMeshProUGUI FalloJ1;
+    public TextMeshProUGUI FalloJ2;
+    public float duracionAparicion = 3f;
 
     public Text cuentaAtras;
 
@@ -33,6 +35,11 @@ public class Operaciones : MonoBehaviour
 
     void Start()
     {
+        MasBalasJ1.gameObject.SetActive(false);
+        MasBalasJ2.gameObject.SetActive(false);
+        FalloJ1.gameObject.SetActive(false);
+        FalloJ2.gameObject.SetActive(false);
+
         StartCoroutine(GenerarOperacionMatematica());
         StartCoroutine(ContadorRegresivo());
        
@@ -158,17 +165,17 @@ public class Operaciones : MonoBehaviour
 
             if (playerNumber == 1 && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.F)))
             {
-                bulletsJ1 += 6;
-                
+                bulletsJ1 += 6; 
                 bulletsText.text = bulletsJ1.ToString();
-                
+                StartCoroutine(ShowTextForDuration(MasBalasJ1, duracionAparicion));
+
             }
             else if (playerNumber == 2 && (Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.L)))
             {
                 bulletsJ2 += 6;
-                
                 bulletsText1.text = bulletsJ2.ToString();
-               
+                StartCoroutine(ShowTextForDuration(MasBalasJ2, duracionAparicion));
+
             }
            
             canAnswer = false;
@@ -176,24 +183,30 @@ public class Operaciones : MonoBehaviour
         }
         else
         {
+            if (playerNumber == 1)
+                StartCoroutine(ShowTextForDuration(FalloJ1, duracionAparicion));
+            else if (playerNumber == 2)
+                StartCoroutine(ShowTextForDuration(FalloJ2, duracionAparicion));
+
             canAnswer = false;
             StartCoroutine(ResetAnswerAfterDelay());
         }
+        
+    }
 
-        //Debug.Log(isCorrect);
+    IEnumerator ShowTextForDuration(TextMeshProUGUI mostrarTexto, float duracion)
+    {
+        mostrarTexto.gameObject.SetActive(true);
+        yield return new WaitForSeconds(duracion);
+        mostrarTexto.gameObject.SetActive(false);
     }
 
     IEnumerator ResetAnswerAfterDelay()
     {
-        // Espera un tiempo antes de permitir la respuesta nuevamente
         yield return new WaitForSeconds(tiempoParaResponder);
 
-        // Permite la respuesta nuevamente
         canAnswer = true;
     }
-
-
-    
 
 
     IEnumerator GenerarOperacionMatematica()
@@ -253,5 +266,4 @@ public class Operaciones : MonoBehaviour
         return operation;
     }
 }
-
 
