@@ -397,7 +397,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Explicaci\xF3n del juego"
+  m_text: "Explicaci\xF3 del joc"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -531,18 +531,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bienvenidos a Cyber Rivals! \n\nEn este juego deber\xE1s acabar con tu
-    oponente para conseguir la victoria, mediante el transcurso de la partida apareceran
-    operaciones matem\xE1ticas, si aciertas antes que tu rival te beneficiar\xE1n
-    con 6 balas extra en tu inventario y si el primer jugador que responde la operacion
-    falla se quedar\xE1 como nula.\n\nControles del jugador 1 (ASH)\n\"a\" y \"s\"
-    para moverse horizontalmente y w para saltar, el disparo con la barra espaciadora
-    y para responder la operaci\xF3n deber\xE1s darle a la tecla \"e\", \"r\" o \"f\",
-    depende cual creas correcta.\n\nControles del jugador 2 (NYX)\nEl movimiento
-    horizontal lo hara con las flechitas izquierda y derecha, el salto con la flechita
-    para arriba, el disparo con \"p\" y para elegir el resultado correcto de la operaci\xF3n
-    las teclas \"i\", \"o\" o \"L\", depende cual creas correcta.\n\nPreparate y
-    demuestra tus habilidades soldado! "
+  m_text: "Benvinguts a Cyber \u200B\u200BRivals!\r\n\r\nEn aquest joc haur\xE0s
+    d'acabar amb el teu oponent per aconseguir la vict\xF2ria, mitjan\xE7ant el transcurs
+    de la partida apareixeran operacions matem\xE0tiques, si encertes abans que el
+    teu rival et beneficiaran amb 6 bales extra al teu inventari i si el primer jugador
+    que respon l'operaci\xF3 falla es quedar\xE0 com a nul\xB7la.\r\n\r\nControls
+    del jugador 1 (ASH)\r\n\"a\" i \"s\" per moure's horitzontalment i w per saltar,
+    el tret amb la barra espaiadora i per respondre l'operaci\xF3 haur\xE0s de donar-li
+    a la tecla \"e\", \"r\" o \"f\", dep\xE8n quina creguis correcta.\r\n\r\nControls
+    del jugador 2 (NYX)\r\nEl moviment horitzontal ho far\xE0 amb les fletxetes esquerra
+    i dreta, el salt amb la fletxeta cap amunt, el tret amb \"p\" i per triar el
+    resultat correcte de l'operaci\xF3 les tecles \"i\", \"o\" o \"L\", dep\xE8n
+    quina creguis correcta.\r\n\r\nPrepara't i demostra les teves habilitats soldat!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Volver a men\xFA principal"
+  m_text: "Tornar a men\xFA principal"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

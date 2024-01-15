@@ -332,7 +332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Historia
+  m_text: "Hist\xF2ria"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Volver a men\xFA principal"
+  m_text: "Tornar a men\xFA principal"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -930,11 +930,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "En una batalla campal, dos facciones en guerra, los Luminis y los Umbra,
-    compiten por el control de sus tierras. Ash y Nyx, los representantes de sus
-    bandos, se enfrentan por hacer justicia. \nCada uno busca la supremac\xEDa en
-    un mundo devastado por la guerra.\n\n\xBFQuien prevalecer\xE1 en esta batalla
-    definitiva por el futuro de la humanidad?"
+  m_text: "En una batalla campal, dues faccions en guerra, els Luminis i els Umbra,
+    competeixen pel control de les seves terres. Ash i Nyx, els representants dels
+    seus b\xE0ndols, s'enfronten per fer just\xEDcia.\r\nCadasc\xFA busca la supremacia
+    en un m\xF3n devastat per la guerra.\r\n\r\nQui prevaldr\xE0 en aquesta batalla
+    definitiva pel futur de la humanitat?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
